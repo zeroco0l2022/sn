@@ -35,7 +35,7 @@ class WallService {
 
     fun clear() {
         posts = emptyArray()
-        nextId = 0
+        nextId = 1
     }
 
     fun likeById(id: Long) {
