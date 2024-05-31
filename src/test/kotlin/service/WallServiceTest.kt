@@ -10,7 +10,7 @@ import ru.netology.service.WallService
 class WallServiceTest {
 
     @Test
-    fun add() {
+    fun testAdd() {
         val service = WallService()
         val result = service.add(Post(ownerId = 111, fromId = 111, createdBy = 111, text = "Text"))
       assertNotEquals(0, result.id)
@@ -28,5 +28,6 @@ class WallServiceTest {
 
         assertTrue(result)
     }
+
 
 }
