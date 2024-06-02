@@ -1,6 +1,7 @@
 package ru.netology.service
 
 import ru.netology.data.Post
+import ru.netology.data.objects.PostType
 
 class WallService {
     private var posts = emptyArray<Post>()
@@ -35,7 +36,7 @@ class WallService {
 
     fun clear() {
         posts = emptyArray()
-        nextId = 0
+        nextId = 1
     }
 
     fun likeById(id: Long) {
